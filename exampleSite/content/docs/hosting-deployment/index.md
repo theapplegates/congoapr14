@@ -79,6 +79,9 @@ To deploy to [Netlify](https://www.netlify.com), create a new continuous deploym
 
 {{< screenshot src="netlify-build-settings.jpg" alt="Screen capture of Netlify build settings" >}}
 
+{{< screenshot src="Gulfstream-G400.jpg" alt="A Gulfstream G400" >}}
+
+
 Then in the root of your site repository, create a `netlify.toml` file:
 
 ```toml
