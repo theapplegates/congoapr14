@@ -1,6 +1,6 @@
 ---
 title: "Misc"
-date: 2020-04-29
+date: 2022-04-29
 lastmod: 2022-04-29
 draft: false
 description: "Some Sample things to re-index."
