@@ -6,12 +6,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+### Added
+
+- Finnish translation ([#185](https://github.com/jpanther/congo/pull/185))
+
 ### Changed
 
 - Updated French translation ([#178](https://github.com/jpanther/congo/pull/178))
 - Analytics partial now checks `hugo.IsProduction` instead of `.Site.IsServer` before including scripts ([#179](https://github.com/jpanther/congo/issues/179))
 - Upgrade to Tailwind v3.0.24 ([#176](https://github.com/jpanther/congo/pull/176))
 - Upgrade to Mermaid v9.0.1 ([#183](https://github.com/jpanther/congo/pull/183))
+
+### Fixed
+
+- Code blocks are rendered incorrectly in RTL languages ([#164](https://github.com/jpanther/congo/issues/164))
+- Scroll to top link overlaps footer menu on mobile devices when there are several links ([#172](https://github.com/jpanther/congo/issues/172))
+
+### Removed
+
+- `hugo.Generator` from HTML `<head>` so that the [default Hugo generator behaviour](https://gohugo.io/getting-started/configuration/#disablehugogeneratorinject) works as expected ([#179](https://github.com/jpanther/congo/issues/179))
 
 ## [2.1.3] - 2022-04-12
 
