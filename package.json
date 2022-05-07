@@ -4,13 +4,12 @@
   "description": "Congo theme for Hugo",
   "main": "index.js",
   "scripts": {
-    "preinstall": "rm -rf assets/vendor",
+    "preinstall": "rimraf assets/vendor",
     "postinstall": "vendor-copy",
     "assets": "rimraf assets/vendor && vendor-copy",
     "dev": "NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -i ./assets/css/main.css -o ./assets/css/compiled/main.css --jit -w",
     "build": "NODE_ENV=production ./node_modules/tailwindcss/lib/cli.js -i ./assets/css/main.css -o ./assets/css/compiled/main.css --jit",
     "example": "hugo server --source exampleSite --themesDir ../.. --buildDrafts -b http://localhost/congo/ -p 8008",
-    "rimraf": "./node_modules/rimraf/bin.js",
     "lighthouse": "lhci autorun"
   },
   "repository": {
@@ -32,7 +31,7 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.2",
     "chart.js": "^3.7.1",
-    "fuse.js": "^6.5.3",
+    "fuse.js": "^6.6.0",
     "katex": "^0.15.3",
     "mermaid": "^9.0.1",
     "prettier": "^2.6.2",
